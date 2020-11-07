@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <h1> Welcome to the State Finder! </h1>
+    <div id="search">
+      
     </div>
-    <router-view/>
+      <div id="nav">
+        <router-link to="/">Maps</router-link> |
+        <router-link to="/Descriptions">Descriptions</router-link> |
+        <router-link to="/about">About</router-link>
+      </div>
+      <router-view/>
   </div>
 </template>
 
@@ -28,5 +33,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#search {
+  height: auto;
+  width: 5px;
+  border-radius: 50%;
 }
 </style>

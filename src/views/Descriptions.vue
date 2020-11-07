@@ -7,16 +7,16 @@
       </form>
     </div>
   </div>
-  <StateList :states="states" />
+  <Des :states="states" />
 </div>
 </template>
 
 <script>
-import StateList from "../components/StateList.vue"
+import Des from "../components/Des.vue"
 export default {
   name: 'Home',
   components: {
-    StateList
+    Des
   },
   data() {
     return {
